@@ -3,7 +3,7 @@ body{
 }
 
 header {
-    background-color: #BBBBBB;
+    background-color: #62da7c;
     padding: 20px 0;
 }
 
@@ -85,7 +85,7 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url(imagenes/bg.jpg);
+    background: #242524;
     padding:40px;
 }
 
@@ -96,6 +96,7 @@ footer{
 }
 
 form{
+    align-items: center;
     margin: 40px 0;
 }
 
@@ -230,7 +231,7 @@ td,th{
 }
 
 .imagen-diferenciales{
-    width: 60%;
+    width: 50%;
     transition: 400ms;
     box-shadow: 10px 10px 30px 15px #000000;
 }
