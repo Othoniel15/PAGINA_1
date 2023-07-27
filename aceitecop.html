@@ -36,54 +36,70 @@
             </div>
         </header>
 
-        <img class="banner" src="banner/primero.jpg">
-        
-        <main>
-            <section class="principal">
-
-                <h2 class="titulo-principal">¿Quienes somos?</h2>
-
-                <img class="utensilios"  src="imagenes/OQ.jpg" alt="Copaiba.">
+        <main class="main-product">
+            <section class="description-product">
+                <div class="container-img">
+                    <img src="imagenes/aceitedecopaiba.jpg" alt="imagen-producto"/>
+                </div>
+                <div class="container-info-product">
+                    <div class="container-price">
+                        <span>$95.00</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
     
-                <p>Floresta Orgánic es una empresa que trabaja con Comunidades nativas de la Amazonia peruana de forma sostenible y artesanal, sus productos son manejados con técnicas ancestrales libres de cualquier contaminación o insumos químicos.
-                Las esencias o aceites esenciales son una mezcla compleja de sustancias aromáticas responsable de las fragancias de las flores. Poseen numerosas acciones farmacológicas, por lo que constituyen la base de la aromaterapia, pero además son ampliamente utilizados en perfumería y cosmética, en la industria farmacéutica y en la industria de la alimentación, licorería y confitería.
-                </p>
+                    <div class="container-add-cart">
+                        <div class="container-quantity">
+                            <input
+                                type="number"
+                                placeholder="1"
+                                value="1"
+                                min="1"
+                                class="input-quantity"
+                            />
+                            <div class="btn-increment-decrement">
+                                <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                            </div>
+                        </div>
+                        <button class="btn-add-to-cart">
+                            <i class="fa-solid fa-plus"></i>
+                            Añadir al carrito
+                        </button>
+                    </div>
     
-                <p id="mision"><em>Tenemos como objetivo <strong>la de crear un mercado internacional de productos y subproductos organicos obtenidos en la amazonia</strong>.</em></p>
+                    <div class="container-description">
+                        <div class="title-description">
+                            <h4>Descripción</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="text-description">
+                            <p>
+                                El aceite de copaiba se obtiene a partir de la resina de los árboles que comparten el mismo nombre. Dado que esta se produce de forma natural, el proceso consiste en realizar una incisión en el tronco, filtrar el contenido y tratarlo hasta conseguir el aceite de aroma dulce y amaderado.
+                            </p>
+                        </div>
+                    </div>
     
-                <p>Contamos con una plataforma donde ofertamos todos nuestros productos, para llevar calidad de vida a nuestros consumidores y tambien a nuestro propio personal.</p> 
+                    <div class="container-additional-information">
+                        <div class="title-additional-information">
+                            <h4>Información adicional</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="texto-adicional">
+                            <p>-----------</p>
+                        </div>
+                    </div>
     
+                    <div class="container-reviews">
+                        <div class="title-reviews">
+                            <h4>Recomendaciones</h4>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="texto-recomendaciones">
+                            <p>-----------</p>
+                    </div>
+                </div>
             </section>
-
-            <section class="mapa">
-                <h3 class="titulo-principal">Nuestra Ubicación</h3>
-                <p>Nos encontramos por la carretera Iquitos - nauta Km. 39.700</p>
-
-                <div class="mapa-contenido">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6809.049309543464!2d-73.44745961943042!3d-4.077683069400147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ea793cf4709b1b%3A0xdc5b00df833f7684!2sENRIQUE%20LORENTE%20PASTOR-%20ESSENSIL%20PER%C3%9A%20-FINCA%20PARA%C3%8DSO.!5e1!3m2!1ses-419!2spe!4v1690215656615!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-            </section>
-            
-            <section class="diferenciales">
-    
-                <h3 class="titulo-principal">Diferenciales</h3>
-            
-                <div class="contenido-diferenciales">
-                    <ul class="lista-diferenciales">
-                        <li class="items">Productos órganicos</li>
-                        <li class="items">Calidad</li>
-                        <li class="items">Variedad</li>
-                        <li class="items">Profesionales calificados</li>
-                        <li class="items">Puntualidad</li>
-                        <li class="items">Limpieza</li>
-                    </ul><img src="diferenciales/OIP.jpg" class="imagen-diferenciales">
-                </div>
-                <div class="video">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/rXAYaAopOJk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-            </section>   
+			</div>
         </main>
 
         <footer>
@@ -113,7 +129,7 @@
                         <span class="elementor-screen-only">Instagram</span>
                         <i class="fab fa-instagram"></i>					</a>
                 </span>
-            </div>
+        </div>
             <img class="footer_img" src="imagenes/logo.png">
             <p class="copyright">&copy Copyright ESSENSIL - 2023</p>
         </footer>

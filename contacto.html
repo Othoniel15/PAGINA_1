@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Contacto - FLORESTA</title>
-        <link rel="stylesheet" href="reset.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Contactos - FLORESTA</title>
+        <meta name="description" content="Somos una empresa dedicada a la extracción de aceites esenciales y elaboración de productos a base de ellos.">
+        <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-con">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="caja">
-                <h1><img src="imagenes/pm.png" alt="Logo de la empresa"></h1>
+            <div class="box-content">
+                <img class="logo" src="imagenes/logo1.png">
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                    <ul class="categorias">
+                        <li class=><a class="cat" href="index.html">Home</a></li>
+                        <li>
+                            <a class="cat" href="productos.html">PRODUCTOS</a>
+                            <ul class="productos-venta">
+                                <li class="description-product"><a href="aceitecop.html">Aceite de copaiba(Copaifera oficcinalli)</a></li>
+                                <li class="description-product"><a href="#">Aceite de palo de rosa(Aniba rosaedora)</a></li>
+                                <li class="description-product"><a href="#">Aceite de ungurahui(Oenocarpus bataua Mart)</a></li>
+                                <li class="description-product"><a href="#">Hidrolato de palo de rosa(aniba rosaedora)</a></li>
+                                <li class="description-product"><a href="#">Clavo huasca(Tynanthus panurensis)</a></li>
+                            </ul> 
+                        </li>
+                        <li><a class="cat" href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -75,7 +87,7 @@
         </main>
         
         <footer>
-            <img src="imagenes/pm_negro.png">
+            <img class="footer_img" src="imagenes/logo.png">
             <p class="copyright">&copy Copyright ESSENSIL - 2023</p>
         </footer>
     </body>
