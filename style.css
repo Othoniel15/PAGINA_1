@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 body {
@@ -117,6 +116,7 @@ nav{
     display: none;
     list-style: none;
     width: 250px;
+    height: 200px;
     background-color: #0a0a0a;
 }
 
@@ -297,6 +297,75 @@ nav{
     font-weight: bold;
     margin-top:10px;
 }
+
+/*VENTA PRODUCTO*/
+
+.description-product{
+    padding: 3em 0;
+    background: #f5f3f3;
+}
+
+.container-img{
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.imagen-producto{
+    width: 50%;
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 10px #000000;
+}
+
+.imagen-producto:hover{
+    opacity: 0.3;
+}
+
+.BOX_123{
+    margin: 30px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-info-product{
+   font-size: 40px;
+    min-height: 100px;
+    margin: 20px 0 auto;
+}
+
+.btn-add-to-cart{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #0bf33d;
+
+}
+.btn-add-to-cart:hover{
+    color:#fff ;
+    border: solid 2px #c78c19;
+    transition: 1s;
+}
+
+.container-description{
+    width: 640px;
+    margin: 20px 0 auto;
+}
+
+.container-reviews{
+    max-width: 940px;
+    margin:20px 0 auto;
+    text-align: start;
+}
+
+.beneficios_lista::before{
+    content:"★"
+    float: left;
+
+}
+
+
 
 
 footer{
