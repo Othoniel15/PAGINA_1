@@ -4,24 +4,21 @@
 }
 
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     min-width: 920px;
-}
-html, body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
 }
+
 body {
     border-collapse: collapse;
     display: table;
     background-color: #fff;
     font-family: "Proxima Nova",-apple-system,Roboto,Arial,sans-serif,sans-serif;
     table-layout: fixed;
-}
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
 }
 
 body {
@@ -53,7 +50,7 @@ header {
     border: 0;
     position: relative;
 }
-header, [role=main] {
+header {
     display: table-row;
     width: 100%;
 }
@@ -84,11 +81,10 @@ header:before {
  height: auto;
 }
 
-
-
 nav{
     position: relative;
-    max-width: 940px;
+    max-width: 600px;
+    top: -60px;
     margin: auto;
     background-color: #088c19;
     font-size: 20px;
@@ -108,15 +104,15 @@ nav{
 }
 
 .categorias > li:hover{
-    background-color: #b1eebe;
+    background-color: #87d2f0;
 }
 
 .productos-venta{
     position: absolute;
     display: none;
     list-style: none;
-    width: 250px;
-    height: 200px;
+    width: 180px;
+    height: auto;
     background-color: #0a0a0a;
 }
 
@@ -125,14 +121,14 @@ nav{
 }
 
 .productos-venta li:hover{ 
-    background-color: black;
+    background-color: rgb(147, 233, 229);
 }
 
 .productos-venta >li >a{
     display: block;
-    color: #0bf33d;
-    padding: 15px 15px 15px 20px;
-    font-size: 20px;
+    color: #f58607;
+    padding: 10px 15px 15px 20px;
+    font-size: 12px;
 }
 
 .banner{
@@ -232,8 +228,6 @@ nav{
 /*css product_sold */
 
 .container-img {
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in;
     height: auto;
     -o-object-fit: contain;
     object-fit: contain;
@@ -300,9 +294,9 @@ nav{
 
 /*VENTA PRODUCTO*/
 
-.description-product{
+.description-product-unit{
     padding: 3em 0;
-    background: #f5f3f3;
+    background: #c9f5d6;
 }
 
 .container-img{
@@ -359,14 +353,67 @@ nav{
     text-align: start;
 }
 
-.beneficios_lista::before{
-    content:"★"
-    float: left;
-
+.contaner__data-user, form{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
+form label, form legend{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
 
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
 
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
 
 footer{
     height: 180px;
@@ -385,3 +432,5 @@ footer{
     font-size: 13px;
     margin:20px;}
 
+@media screen and (-webkit-min-device-pixel-ratio: 3){
+}
