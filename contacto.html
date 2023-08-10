@@ -3,76 +3,66 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>Contactos - FLORESTA</title>
-        <meta name="description" content="Somos una empresa dedicada a la extracción de aceites esenciales y elaboración de productos a base de ellos.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>FLORESTA</title>
         <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-con">
+        <link http-equiv="X-UA-compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3dac4675d5.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div class="box-content">
                 <img class="logo" src="imagenes/logo1.png">
-                <nav>
-                    <ul class="categorias">
-                        <li class=><a class="cat" href="index.html">HOME</a></li>
-                        <li>
-                            <a class="cat" href="productos.html">PRODUCTOS</a>
-                            <ul class="productos-venta">
-                                <li class="description-product"><a href="aceitecop.html">Aceite de copaiba(Copaifera oficcinalli)</a></li>
-                                <li class="description-product"><a href="aceitepal.html">Aceite de palo de rosa(Aniba rosaedora)</a></li>
-                                <li class="description-product"><a href="aceitehu.html">Aceite de ungurahui(Oenocarpus bataua Mart)</a></li>
-                                <li class="description-product"><a href="sangre_de_drago.html">Sangre de drago</a></li>
-                                <li class="description-product"><a href="#">Clavo huasca(Tynanthus panurensis)</a></li>
-                            </ul> 
-                        </li>
-                        <li><a class="cat" href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
+                <div class="list">
+                    <nav>
+                        <ul class="categorias">
+                            <li class=><a class="cat" href="index.html">HOME</a></li>
+                            <li><a class="cat" href="productos.html">PRODUCTOS</a></li>
+                            <li><a class="cat" href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
-            <div class="contaner__data-user">
-                <form>
-                    <label for="nombreapellido">Nombre y Apellido</label>
-                    <input type="text" id="nombreapellido" class="input-padron" required>
-    
-                    <label for="correoelectronico">Correo Electrónico</label>
-                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-    
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-    
-                    <label for="mensaje">Mensaje</label>
-                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-                    
-                    <fieldset>
-                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
-    
-                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                        
-                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                        
-                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-                        
-                    </fieldset>
-                   
-                    <fieldset>
-                        <legend>¿En cuál horario prefiere ser atendido?</legend>
-                        <select>
-                            <option>Mañana</option>
-                            <option>Tarde</option>
-                            <option>Noche</option>
-                        </select>
-                    </fieldset>
-                    
-                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Floresta Export?</label>                
-                    
-                    <input type="submit" value="Enviar formulario" class="enviar">
-    
-                </form>
-            </div>
+            <section class="box-contact">
+                <div class="contaner-info">
+                    <h3>Somos Floresta Export - Organic amazonia</h3>
+                    <img src="imagenes/WhatsApp Image 2023-07-24 at 4.34.34 PM (1).jpeg" alt="varios">
+                    <img src="imagenes/WhatsApp Image 2023-07-24 at 4.34.34 PM (2).jpeg" alt="varios">
+                    <img src="imagenes/WhatsApp Image 2023-07-24 at 4.34.34 PM (3).jpeg" alt="varios">
+                    <img src="imagenes/WhatsApp Image 2023-07-24 at 4.34.34 PM (4).jpeg" alt="varios">
+                    <img src="imagenes/WhatsApp Image 2023-07-24 at 4.34.34 PM (5).jpeg" alt="varios">
+                    <img src="imagenes/WhatsApp Image 2023-07-24 at 4.34.34 PM (6).jpeg" alt="varios">
+                </div>
+                <div class="contaner_contact">
+                    <H3>Contactanos a traves de:</H3>
+                    <ul>
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook-messenger fa-shake"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="telegram">
+                                <i class="fa-brands fa-telegram fa-bounce"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram">
+                                <i class="fa-brands fa-instagram fa-spin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="gmail">
+                                <i class="fa-solid fa-at fa-bounce"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="whatsapp">
+                                <i class="fa-brands fa-whatsapp fa-flip"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
         
         <footer>
