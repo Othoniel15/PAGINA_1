@@ -622,7 +622,9 @@ footer {
     }
 
     main{
+        position: absolute;
         width: auto;
+        margin: auto;
     }
 
     .principal p{
@@ -654,45 +656,74 @@ footer {
         width: 80%;
         }
 
-        .box-contact {
-            max-width:100%;
-            display: block;
-            align-items: center;
-            margin: 0;
-            background: #eaeceb;
-        }
-        
-        .contaner-info{
-            width: auto;
-            height: 90%;
-            margin: auto;
-        }
-        
-        .contaner-info img{
-            display: flexbox;
-            text-align: center;
-            width: 25% ;
-            vertical-align: top;
-            box-sizing: border-box;
-        }
-        
-        .contaner_contact {
-            width: auto;
-            height: 50%;
-            justify-content: center;
-            align-items: center;
-            background: #eaeceb;
-            margin: auto;
-        }
-        
-        .contaner_contact h3, .contaner-info h3{
-            color: #0a0a0a;
-            font-size: 12px;
-        }
-        
-        .contaner_contact ul li a{
-            align-items: center;
-            margin: auto;
-            font-size: 20px;
-        }
+    .box-contact {
+        max-width:auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 25px;
+        padding: 10px;
+        background: #0bb85f;
+    }
+    
+    .contaner-info{
+        width: auto;
+        height: 100%;
+        margin: 25px;
+    }
+    
+    .contaner-info img{
+        display: flexbox;
+        width: 40% ;
+        vertical-align: top;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .contaner_contact {
+        width: auto;
+        height: 75%;
+        justify-content: center;
+        align-items: center;
+        background: #eaeceb;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    
+    .contaner_contact h3, .contaner-info h3{
+        color: #0a0a0a;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .contaner_contact ul li a{
+        align-items: center;
+        margin: 10px;
+        font-size: 40px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        bottom: 0px;
+        text-align: center;
+        background: #61e77e;
+        padding: 20px;
+    }
+    
+    .footer_img {
+        display: none;
+    }
+    
+    .container-redes {
+        display: none
+    }
+    .copyright {
+        color: #2c1ca3;
+        font-size: 13px;
+        margin: 0px 75px 75px 0px;
+    }
 }  
