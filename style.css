@@ -66,7 +66,7 @@ nav {
     background-color: #0ca733;
 }
 
-.productos-venta {
+.productos-venta{
     position: absolute;
     display: none;
     list-style: none;
@@ -77,6 +77,7 @@ nav {
 
 .categorias li:hover .productos-venta {
     display: block;
+    position: fixed;
 }
 
 .productos-venta li:hover {
@@ -696,12 +697,17 @@ footer {
         font-size: 12px;
         text-align: center;
     }
+
+    .contaner_contact ul li{
+        padding: auto;
+        margin: 10px;
+    }
     
     .contaner_contact ul li a{
         align-items: center;
-        margin: 10px;
+        margin: 5px;
+        padding: auto;
         font-size: 40px;
-        box-sizing: border-box;
     }
 
     footer {
