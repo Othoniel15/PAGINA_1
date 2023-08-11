@@ -446,9 +446,20 @@ footer {
 
 /*Haciendo la página Responsive*/
 @media screen and (max-width:1200px) {
+    header{
+        width: auto;
+
+    }
+
+    .box-content{
+        width: auto;
+        align-items: center;
+    }
+
     nav {
         position: relative;
-        margin-left: 100px;
+        margin: auto;
+        margin-right: 75px;
     }
 
     .banner{
@@ -456,9 +467,8 @@ footer {
     }
 
     main{
-        width: auto;
+        width: 90%;
         margin: auto;
-        margin-left: 60px;
     }
 
     .box-contact{
@@ -472,6 +482,7 @@ footer {
     .principal p{
         text-align: justify;
         justify-content: center;
+        margin: auto 20px;
     }
 
     .mapa-contenido {
@@ -540,6 +551,10 @@ footer {
 
     .mapa-contenido {
         width: 60%;
+    }
+
+    .video {
+        width: auto;
     }
 
     .box-contact {
@@ -620,6 +635,10 @@ footer {
         margin-left: 30px;
         font-size: 9px;
         background-color: #61e77e;
+    }
+
+    .productos-venta li{
+        display: none;
     }
 
     main{
