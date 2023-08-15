@@ -24,14 +24,14 @@ header {
     position: relative;
     margin: auto;
     padding: auto;
-    padding-top: 20px;
+    padding-top: 15px;
     background-color: #61e77e;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 12%;
     margin-left: 20px;
     padding-bottom: 15px;
 }
@@ -40,7 +40,7 @@ nav {
     position: absolute;
     max-width: 60%;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 200px;
     font-size: 25px;
     font-weight: bold;
@@ -92,9 +92,17 @@ nav {
 }
 
 .banner {
+
+    text-align: center;
     width: 100%;
     height: 150px;
     background: url(banner/primero.jpg);
+}
+
+.banner img{
+    width: 100px;
+    height: 150px;
+    justify-content: space-around;
 }
 
 .principal {
@@ -115,6 +123,8 @@ nav {
 .principal p {
     margin: 0 0 1em;
     font-size: 1em;
+    text-align: justify;
+    margin-right: 30px;
 }
 
 .principal strong {
@@ -126,7 +136,7 @@ nav {
 }
 
 .imagenes-ref {
-    width: 120px;
+    width: 90px;
     float: left;
     margin: 0 20px 20px 0;
 }
@@ -215,10 +225,6 @@ nav {
     background: #fefefe;
 }
 
-.productos ul {
-    background-color: #fefefe;
-}
-
 .productos li {
     display: inline-block;
     text-align: center;
@@ -226,8 +232,10 @@ nav {
     vertical-align: top;
     margin: 10px 1.5%;
     padding: 30px 20px;
+    border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     box-sizing: border-box;
+    background: #dad4d4;
     border: 5px solid #dad4d4;
 }
 
@@ -239,11 +247,12 @@ nav {
 }
 
 .productos li:hover {
-    border-color: #c0720c;
+    border-color: #61e77e;
+    width: 30.15%;
 }
 
 .productos li:active {
-    border-color: #08118c;
+    border-color: #34f83e;
 }
 
 .productos h2 li {
@@ -266,7 +275,7 @@ nav {
 
 .description-product-unit {
     padding: 3em 0;
-    background: #fefefe;
+    background: #FEFEFE;
 }
 
 .container-img {
@@ -275,7 +284,7 @@ nav {
 }
 
 .imagen-producto {
-    width: 50%;
+    width: 45%;
     padding: auto;
     transition: 400ms;
     box-shadow: 10px 10px 20px 10px #000000;
@@ -293,7 +302,6 @@ nav {
     margin-left: 100px;
     background: #fefefe;
     justify-content: center;
-    text-align: center;
 }
 
 .caracteristicas-pro h2{
@@ -343,7 +351,7 @@ nav {
 .container-reviews {
     max-width: 940px;
     margin: 20px 0 auto;
-    text-align: start;
+    text-align: justify;
 }
 
 .box-contact {
@@ -382,36 +390,23 @@ nav {
     margin: auto;
 }
 
-.contaner_contact h3{
+.contaner_contact h3, .contaner-info h3{
     color: #0a0a0a;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .contaner_contact ul li{
     display: inline-flex;
     align-items: center;
+    text-align: center;
     margin: 10% 25px 25px 25px;
     font-size: 80px;
 }
 
-.telegram{
-    color: #42a1ee;
-}
-
-.instagram{
-    color: #e9d205;
-}
-
-.gmail{
-    color: #7adc09;
-}
-
-.whatsapp{
-    color: rgb(37, 211, 102);
-}
-
 footer {
     height: 120px;
+    align-items: center;
     text-align: center;
     background: #61e77e;
     padding: 40px;
@@ -423,25 +418,109 @@ footer {
 }
 
 .container-redes {
-    display: flex;
     width: 400px;
-    position: relative;
     margin: auto
+}
+
+.container-redes ul {
+    text-align: center;
 }
 
 .container-redes ul li {
     display: inline-block;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
+    text-align: center;
+}
+
+.container-redes ul li a{
+    color: #000000;
 }
 
 .copyright {
-    color: #2c1ca3;
+    color: #000000;
     font-size: 13px;
     margin: 15px;
+}
+
+.aviso-cookies{
+    display: none;
+    background: #61e77e;
+    padding: 20px;
+    width: calc(100%-40px);
+    max-width: 388px;
+    line-height: 150%;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    padding-top: 60px;
+    box-shadow: 6px 2px 20px 10px rgb(222, 222, 222, .25);
+    text-align: center;
+}
+.aviso-cookies.activo {
+    display: block;
+}
+
+ .aviso-cookies .galleta {
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo, .aviso-cookies .titulo  {
+    margin-bottom: 15px;
+}
+
+.aviso-cookies .boton  {
+    width: 100%;
+    background-color: #888888;
+    border: none;
+    color: #c4d4c8;
+    font-family: 'Assistant', sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.aviso-cookies .boton:hover  {
+    background: #2c1ca3;
+}
+
+.aviso-cookies .enlace {
+    color: #110650;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+    color: #2c1ca3;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.fondo-aviso-cookies {
+    display: none;
+    background: rgb(0, 0, 0,0.2);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+    display: block;
 }
 
 /*Haciendo la página Responsive*/
