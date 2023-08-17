@@ -2,6 +2,8 @@ const botonAceptarCookies = document.getElementById('btn-aceptar-cookies');
 const avisoCookies = document.getElementById('aviso-cookies');
 const fondoAvisoCookies = document.getElementById('fondo-aviso-cookies');
 
+datalayer = [];
+
 if(!localStorage.getItem('cookies-aceptadas')){
     avisoCookies.classList.add('activo');
     fondoAvisoCookies.classList.add('activo'); 
@@ -12,5 +14,7 @@ botonAceptarCookies.addEventListener("click", () => {
     fondoAvisoCookies.classList.remove('activo');
 
     localStorage.setItem('cookies-aceptadas', true);
+
+    datalayer.push({'event': 'activar-cookies'});
 
 });
