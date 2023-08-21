@@ -1150,10 +1150,10 @@ footer {
     }
 
     .aviso-cookies .enlace:hover {
-        display: none;
+        background: #2c1ca3;
     }
     
     .aviso-cookies .boton:hover  {
-        display: none;
+        background: #110650;
     }
 }  
