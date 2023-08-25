@@ -747,7 +747,7 @@ footer {
 
     .productos {
         width: auto;
-        margin: 0 auto;
+        margin: 0 5%;
         padding: 30px;
         background: #fefefe;
     }
@@ -767,6 +767,10 @@ footer {
         font-size: 20px;
         font-weight: bold;
         border: none;
+    }
+
+    .productos li:hover{
+        width: 30.03%;
     }
     
     .producto-precio {
@@ -932,10 +936,11 @@ footer {
 
     .productos {
         width: auto;
-        margin: 0 auto;
-        padding: 10px;
+        margin: 0 3%;
+        padding: 5px;
         background: #fefefe;
     }
+
     .productos img{
         width: 85px;
         margin: 20px 20px;
@@ -946,6 +951,10 @@ footer {
         font-weight: bold;
         font-size: 10px;
         text-decoration: none;
+    }
+
+    .productos li:hover{
+        width: 30.05%;
     }
     
     .producto-precio {
@@ -1064,9 +1073,9 @@ footer {
         font-size: 9px;
     }
 
-    .productos-venta li{
+    /*.productos-venta li{
         display: none;
-    }
+    }*/
 
     main{
         position: relative;
@@ -1189,6 +1198,7 @@ footer {
     }
     
     .productos li:hover {
+
         border-color: #61e77e;
         width: 100%;
     }
@@ -1274,7 +1284,7 @@ footer {
     .box-contact {
         position: relative;
         width:auto;
-        display: flex;
+        display: inline;
         align-items: center;
         justify-content: center;
         margin: 25px;
@@ -1282,16 +1292,20 @@ footer {
     }
     
     .contaner-info{
+        display: inline-block;
         position: relative;
-        width: auto;
+        width: 300px;
         height: 100%;
-        margin: 25px;
+        margin: 5px;
     }
     
     .contaner-info img{
         display: flex;
-        width: 40% ;
-        box-sizing: border-box;
+        position: relative;
+        width: 60% ;
+        height: inherit;
+        left: 20%;
+       
     }
     
     .contaner_contact {
