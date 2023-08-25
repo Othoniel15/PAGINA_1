@@ -1,28 +1,7 @@
-const botonAceptarCookies = document.getElementById('btn-aceptar-cookies');
-const avisoCookies = document.getElementById('aviso-cookies');
-const fondoAvisoCookies = document.getElementById('fondo-aviso-cookies');
-
-datalayer = [];
-
-if(!localStorage.getItem('cookies-aceptadas')){
-    avisoCookies.classList.add('activo');
-    fondoAvisoCookies.classList.add('activo'); 
-};
-
-botonAceptarCookies.addEventListener("click", () => {
-    avisoCookies.classList.remove('activo');
-    fondoAvisoCookies.classList.remove('activo');
-
-    localStorage.setItem('cookies-aceptadas', true);
-
-    datalayer.push({'event': 'activar-cookies'});
-
-});
-
-const btnleft = document.querySelector('.btn-left'),
-    btnright = document.querySelector('.btn-right'),
-    sliders = document.querySelector('#div-sliders'),
-    sliderSection = document.querySelectorAll('.slider-section');
+const btnleft = document.querySelector('.btn-left-pro'),
+    btnright = document.querySelector('.btn-right-pro'),
+    sliders = document.querySelector('#div-sliders-prod'),
+    sliderSection = document.querySelectorAll('.slider-section-producto');
 
 btnleft.addEventListener("click", e => moveToLeft())
 btnright.addEventListener("click", e => moveToRight())

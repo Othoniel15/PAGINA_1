@@ -355,15 +355,62 @@ main{
     visibility: visible;
 }
 
-.imagen-producto {
+.slider-producto {
+    position: relative;
+    display: inline-block;
     width: 45%;
     padding: auto;
-    transition: 400ms;
-    box-shadow: 10px 10px 20px 10px #000000;
+    height: 100%;
+    margin: 10px auto;
+    box-shadow: 0 8px 32px 0 #000000;
+    overflow: hidden;
 }
 
-.imagen-producto:hover {
-    opacity: 0.9;
+.div-sliders-prod {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section-producto{
+    width: calc(100%/3);
+    height: 100%;
+}
+
+.slider-section-producto img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left-pro, .btn-right-pro{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    border-radius: 20%;
+    padding: 5px;
+    font-weight: 600;
+    color: #fefefe;
+    transform: translate(0,-50%);
+    cursor: pointer;
+    background:transparent;
+    transition: .5s ease;
+    z-index: 99;
+    user-select: none;
+}
+
+.btn-left-pro:hover, .btn-right-pro:hover {
+    color: #fefefe;
+    background: #888888;
+}
+
+.btn-left-pro{
+    left: 10px;
+} 
+.btn-right-pro{
+    right: 10px;
 }
 
 .caracteristicas-pro{
@@ -919,7 +966,7 @@ footer {
         visibility: visible;
     }
     
-    .imagen-producto {
+    .slider-producto {
         width: 40%;
         transition: 400ms;
         box-shadow: 5px 5px 10px 5px #000000;
@@ -1160,14 +1207,14 @@ footer {
         margin: 15px;
     }
 
-    .imagen-producto {
+    .slider-producto {
         width: 82%;
         margin-left: 9%;
         transition: 400ms;
         box-shadow: 10px 5px 20px 5px #000000;
     }
 
-    .imagen-producto:hover {
+    .slider-producto:hover {
         opacity: 1;
     }
 
