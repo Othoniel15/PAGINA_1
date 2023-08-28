@@ -473,57 +473,94 @@ main{
 }
 
 .box-contact {
-    max-width: 1200px;
-    height: 400px;
+    width: 1200px;
+    height: auto;
     display: flex;
-    align-items: start;
+    align-items: center;
     margin: 0px auto;
-    background: #fefefe;
-    justify-content: space-between;
-    box-shadow: 10px 15px 10px 5px #c4d4c8;
 }
 
 .contaner-info{
-    width: 60%;
-    height: 90%;
-    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.contaner-info form{
+    width: 80%;
+    position: relative;
+    display: inline-block;
+    background: #fefefe;
+    margin: 1%;
+    left: 9%;
+}
+
+.contaner-info form label{
+    width: 20%;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    background: #2c1ca3;
+    color: #fefefe;
+    margin: 3%;
+    text-align: center;
+    left: 9%;
+}
+
+.contaner-info form input{
+    width: 50%;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    background: #e8eaee;
+    margin: 3% 0;
+    left: 9%;
+}
+
+.contaner-info form textarea{
+    width: 80%;
+    height: 100px;
+    position: relative;
+    display: block;
+    background: #e8eaee;
+    margin: 0;
+    left: 9%;
+}
+
+.contaner-info form .enviar{
+    width: 20%;
+    height: 30px;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color:#fff;
+    border-radius: 5px;
+    background: #ebc82c;
+    transition: all .5s ease;
+}
+
+.contaner-info form .enviar:hover{
+    width: 21%;
+    display: block;
+    background: #c22903;
+    border: 2px solid #e05210;
 }
 
 .contaner-info img{
-    display: inline-block;
-    text-align: center;
+    display: inline-flex;
+    position: relative;
+    left: 9%;
     width: 25%;
-    vertical-align: top;
     margin: 0 0.5%;
     padding: 10px 10px;
     box-sizing: border-box;
+    
 }
 
-.contaner_contact {
-    width: 35%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    background: #fefefe;
-    margin: auto;
-}
-
-.contaner_contact h3, .contaner-info h3{
+.contaner-info h3{
     color: #0a0a0a;
     font-size: 20px;
     text-align: center;
-}
-
-.contaner_contact ul li{
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    margin: 10% 25px 25px 25px;
-}
-
-.contaner_contact ul li i{
-    color: #110650;
-    font-size: 75px;
+    margin: 2%;
 }
 
 footer {
@@ -892,7 +929,6 @@ footer {
     }
 
     .box-contact {
-        max-width: auto;
         display: flex;
         align-items: start;
         margin: 0px auto;
@@ -1224,10 +1260,6 @@ footer {
         box-shadow: 10px 5px 20px 5px #000000;
     }
 
-    .slider-producto:hover {
-        opacity: 1;
-    }
-
     .caracteristicas-pro{
         width: auto;
         display: inline;
@@ -1282,30 +1314,34 @@ footer {
     }
 
     .box-contact {
-        position: relative;
-        width:auto;
-        display: inline;
-        align-items: center;
-        justify-content: center;
-        margin: 25px;
-        padding: 10px;
+        background: #fefefe;
     }
     
     .contaner-info{
         display: inline-block;
         position: relative;
-        width: 300px;
+        width: auto;
         height: 100%;
         margin: 2%;
         margin-top: 5%;
     }
+
+    .contaner-info form {
+        width: auto;
+        position: relative;
+        display: inline-block;
+        background: #888888;
+        border-radius: 5%;
+        margin: 1%;
+        left: 0;
+    }
     
     .contaner-info img{
-        display: flex;
+        display: inline-block;
         position: relative;
-        width: 60% ;
+        width: 25% ;
         height: inherit;
-        left: 20%;
+        left: 9%;
        
     }
     
@@ -1320,23 +1356,10 @@ footer {
         box-sizing: border-box;
     }
     
-    .contaner_contact h3, .contaner-info h3{
+    .contaner-info h3{
         color: #0a0a0a;
         font-size: 12px;
         text-align: center;
-    }
-
-    .contaner_contact ul li{
-        padding: auto;
-        margin: 10px; 
-    }
-    
-    .contaner_contact ul li i{
-        align-items: center;
-        margin: 5px;
-        padding: auto;
-        font-size: 40px;
-        color: #0a296b;
     }
 
     footer {
@@ -1348,13 +1371,17 @@ footer {
         padding: 20px;
     }
     
-    .footer_img {
-        display: none;
-    }
-    
     .container-redes {
-        display: none
+        width: 200px;
+        height:auto;
     }
+
+    .container-redes ul li{
+        font-size: 20px;
+        padding: 5px;
+        margin: 0;
+    }
+
     .copyright {
         color: #2c1ca3;
         opacity: 0.5;
