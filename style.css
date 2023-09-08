@@ -1328,7 +1328,7 @@ footer {
       }
       
       .foto p {
-        margin: 5px 0;
+        margin: 5px 0 20px 0;
         font-size: 5px;
         box-sizing: border-box;
       }
@@ -1436,8 +1436,8 @@ footer {
     }
 
     .slider-producto {
-        width: 82%;
-        margin-left: 9%;
+        width: 100%;
+        height: auto;
         transition: 400ms;
         box-shadow: 10px 5px 20px 5px #000000;
     }
