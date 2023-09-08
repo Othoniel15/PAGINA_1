@@ -426,7 +426,7 @@ main{
 .slider-section-producto img{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 300px;/*cambiar al momento de agregar imagenes en el plano horizontal*/
     object-fit: cover;
 }
 
