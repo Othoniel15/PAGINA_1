@@ -416,7 +416,7 @@ main{
 
 .div-sliders-prod {
     width: 300%;
-    height: 100%;
+    height: auto;
     display: flex;
 }
 
