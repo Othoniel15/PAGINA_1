@@ -262,12 +262,14 @@ main{
 
 .slider-section span{
     position: relative;
-    bottom: 25%;
+    bottom: 30%;
     left: 5%;
-    color: #fefefe;
+    color: #e4a111;
     padding: auto;
     font-size: 30px;
+    font-weight: bold;
     z-index: 99;
+    background-color: #fefefe;
 }
 
 .btn-left, .btn-right {
