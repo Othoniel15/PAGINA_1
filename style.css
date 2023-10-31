@@ -264,7 +264,7 @@ main{
     position: relative;
     bottom: 30%;
     left: 5%;
-    color: #e4a111;
+    color: #0a0a0a;
     padding: auto;
     font-size: 30px;
     font-weight: bold;
@@ -849,9 +849,9 @@ footer {
     
     .slider-section span{
         position: relative;
-        bottom: 25%;
-        left: 5%;
-        color: #fefefe;
+        bottom: 30%;
+        left: 3%;
+        color: #0a0a0a;
         padding: auto;
         font-size: 30px;
         z-index: 99;
@@ -1044,7 +1044,7 @@ footer {
         position: relative;
         bottom: 35%;
         left: 5%;
-        color: #fefefe;
+        color: #0a0a0a;
         padding: auto;
         font-size: 20px;
         z-index: 99;
@@ -1350,14 +1350,14 @@ footer {
 
     .slider{
         position: relative;
-        width: 80%;
+        width: 100%;
         height: 200px;
         overflow: hidden;
     }
 
     .slider-section span{
         font-size: 15px;
-        bottom: 35%;
+        bottom: 45%;
     }
 
     .mapa-contenido{
